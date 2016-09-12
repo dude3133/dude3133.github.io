@@ -1,3 +1,19 @@
 body {
     padding-top: 70px;
 }
+
+.left-nav-block {
+    /*background-color: #F0F0F0;*/
+    border-radius: 3px;
+    padding: 0 10px 0 0;
+}
+
+.active-menu {
+    background: repeating-linear-gradient( 45deg, #ffffff, #ffffff 10px, #F0F0F0 10px, #F0F0F0 20px );
+    border-radius: 5px;
+}
+
+.content {
+    background-color: #f8f8f8;
+    padding: 30px;
+}
