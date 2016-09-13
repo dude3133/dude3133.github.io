@@ -1,0 +1,22 @@
+{
+  "name": "elearning",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dude3133@github.com/dude3133/dude3133.github.io.git"
+  },
+  "author": "Nazarii Shkatula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dude3133/dude3133.github.io/issues"
+  },
+  "homepage": "https://github.com/dude3133/dude3133.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
