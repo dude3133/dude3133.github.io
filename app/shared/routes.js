@@ -13,6 +13,12 @@
                 templateUrl: 'app/home/home.html',
                 controller: 'homeController as home',
             })
+            .when('/courses/:name*/:course',
+            {
+                templateUrl: function (urlattr) {
+                    return 'app/courses/' + urlattr.name + '/' + urlattr.course + '.html';
+                }
+            })
             .when('/home',
             {
                 templateUrl: 'app/home/home.html',

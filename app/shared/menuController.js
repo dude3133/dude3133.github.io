@@ -10,11 +10,8 @@
 
         vm.items =
         [
-            { title: "First", active: true, disabled: false }
-        ]
-        activate();
-
-        function activate() {
-        }
+            { title: "First",url:"#/home" , active: true, disabled: false }
+        ];
+        vm.activeMenuItem = 'Home';
     }
 })();
