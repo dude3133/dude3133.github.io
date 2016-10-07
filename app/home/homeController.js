@@ -5,13 +5,15 @@
         .module('App')
         .controller('homeController', homeController);
 
-    function homeController() {
+    homeController.$inject = ['menuService'];
+
+    function homeController(menuService) {
         var vm = this;
-        vm.test = "test!";
 
         activate();
 
         function activate() {
+            //menuService.setMenu([{ title: "First from home", url: "#/home", active: true, disabled: false }]);
         }
     }
 })();

@@ -5,13 +5,20 @@
         .module('App')
         .controller('menuController', menuController);
 
-    function menuController() {
+    menuController.$inject = ['menuService'];
+
+    function menuController(menuService) {
         var vm = this;
 
-        vm.items =
-        [
-            { title: "First",url:"#/home" , active: true, disabled: false }
-        ];
+        vm.items = menuService.getMenu();
+        menuService.setMenuFunction = itemChanged;
+        //[
+        //    { title: "First",url:"#/home" , active: true, disabled: false }
+        //];
         vm.activeMenuItem = 'Home';
+
+        function itemChanged(item) {
+            vm.items = item
+        }
     }
 })();
